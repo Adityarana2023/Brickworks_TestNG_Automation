@@ -3,21 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.skyfall.TestNG_Annotation">
+      <class name="com.project.skyfall.Brickworks_Website">
         <methods>
-          <include name="afterTest"/>
-          <include name="beforeSuite"/>
-          <include name="MapSelectionPage"/>
-          <include name="afterClass"/>
-          <include name="UserLogOut"/>
-          <include name="LoginTest"/>
-          <include name="afterSuite"/>
           <include name="start"/>
-          <include name="RegistrationTest"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
+          <include name="searchMetMap"/>
         </methods>
-      </class> <!-- com.project.skyfall.TestNG_Annotation -->
+      </class> <!-- com.project.skyfall.Brickworks_Website -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
