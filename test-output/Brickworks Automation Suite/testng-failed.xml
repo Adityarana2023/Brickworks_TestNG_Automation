@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Brickworks Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Brickworks Test(failed)">
+    <classes>
+      <class name="com.project.skyfall.Brickworks_Login_LogOut">
+        <methods>
+          <include name="UserLogin"/>
+          <include name="setup"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- com.project.skyfall.Brickworks_Login_LogOut -->
+      <class name="com.project.skyfall.AddMarkerLocationToMap">
+        <methods>
+          <include name="start"/>
+          <include name="addmarker"/>
+        </methods>
+      </class> <!-- com.project.skyfall.AddMarkerLocationToMap -->
+      <class name="com.project.skyfall.Registeration">
+        <methods>
+          <include name="startRegistration"/>
+        </methods>
+      </class> <!-- com.project.skyfall.Registeration -->
+    </classes>
+  </test> <!-- Brickworks Test(failed) -->
+</suite> <!-- Failed suite [Brickworks Automation Suite] -->

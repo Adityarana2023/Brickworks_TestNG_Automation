@@ -53,7 +53,7 @@ public class Login_Automation_Script {
 		
 // Click on thumb nail 	image of "mets"	
 		driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div/div[3]/div[1]/div/div/div/div/div[1]/img")).click();
-		
+		driver.quit();
 	}
 
 }

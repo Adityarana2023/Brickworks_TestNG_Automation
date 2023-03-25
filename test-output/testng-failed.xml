@@ -6,7 +6,8 @@
       <class name="com.project.skyfall.Brickworks_Website">
         <methods>
           <include name="start"/>
-          <include name="searchMetMap"/>
+          <include name="verifyProductNamePageTitle"/>
+          <include name="Aftermethod"/>
         </methods>
       </class> <!-- com.project.skyfall.Brickworks_Website -->
     </classes>

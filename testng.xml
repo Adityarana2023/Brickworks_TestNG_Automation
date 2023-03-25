@@ -3,8 +3,11 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
+      <class name="com.project.skyfall.Registeration"/>
+	  <class name="com.project.skyfall.Brickworks_Website"/>
+      <class name="com.project.skyfall.AddMarkerLocationToMap"/>
       <class name="com.project.skyfall.Login_Automation_Script"/>
-      <class name="com.project.skyfall.Map_Selection_Page"/>
+      <class name="com.project.skyfall.Brickworks_Login_LogOut"/>
       <class name="com.project.skyfall.TestNG_Annotation"/>
     </classes>
   </test> <!-- Test -->
