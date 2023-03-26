@@ -57,7 +57,7 @@ public class Brickworks_Website {
 public void verifyProductNamePageTitle() {
 	String ActualTitle = driver.getTitle();
 	
-	String ExpectedProductNamePageTitle = "Brickworks Site Manager1";
+	String ExpectedProductNamePageTitle = "Brickworks Site Manager122";
 	
 	Assert.assertEquals(ActualTitle, ExpectedProductNamePageTitle);
 	
