@@ -13,6 +13,12 @@
     <scope>test</scope>
 </dependency>
 
+<dependency>
+<groupId>org.apache.poi</groupId>
+<artifactId>poi</artifactId>
+<version>4.1.1</version>
+</dependency>
+
 <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
 <dependency>
     <groupId>io.github.bonigarcia</groupId>

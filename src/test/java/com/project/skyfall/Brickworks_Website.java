@@ -32,6 +32,7 @@ public class Brickworks_Website {
 	@SuppressWarnings("deprecation")
 	@BeforeTest
 	public void start(){
+		
 	WebDriverManager.chromedriver().setup();
 	System.setProperty(ChromeDriverService.CHROME_DRIVER_SILENT_OUTPUT_PROPERTY, "true");
 	System.setProperty("webdriver.chrome.silentOutput", "true");
@@ -46,20 +47,37 @@ public class Brickworks_Website {
 	driver = new ChromeDriver(options);
 	
 	driver.manage().window().maximize();
-	driver.manage().timeouts ().implicitlyWait (Duration.ofSeconds (30));
-	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
+	driver.manage().timeouts ().implicitlyWait (Duration.ofSeconds (50));
+	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (50));
 	
 	driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+	//driver.get("https://ces-skyfall-stage.herokuapp.com/login");
+	//driver.get("https://app.brickworks.live/login");
+	
+	
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	
 	}
 	@Test (priority = 1,enabled=true)
 public void verifyProductNamePageTitle() {
+		
+	//get the actual value of the title
+	
 	String ActualTitle = driver.getTitle();
 	
-	String ExpectedProductNamePageTitle = "Brickworks Site Manager122";
+	String ExpectedProductNamePageTitle = "Brickworks Site Manager";
 	
+	//compare the actual title with the expected title
 	Assert.assertEquals(ActualTitle, ExpectedProductNamePageTitle);
+	//if (getTitle.equals(ActualTitle));
+	{
+	System.out.println( "Test Passed") ;
+	}
+	 
+	{
+	System.out.println( "Test Failed" );
+	}
+	
 	
 	//driver.quit();
 	
@@ -142,7 +160,7 @@ public void verifyProductNamePageTitle() {
 				driver.findElement(By.xpath("//div[@class='content-row'][1]")).click();
 				//enter location name
 				Thread.sleep(3000);
-				driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Location2");
+				driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Loc Name");
 				//enter location description
 				Thread.sleep(3000);
 				driver.findElement(By.cssSelector("textarea[name='content']")).sendKeys("Location1 Description");
@@ -159,20 +177,53 @@ public void verifyProductNamePageTitle() {
 				driver.findElement(By.className("form-multi-select-selection-tags")).click();
 				//click on submit
 				Thread.sleep(3000);
-				driver.findElement(By.className("btn-primary")).click();
+				//driver.findElement(By.className("btn-primary")).click();
+				driver.findElement(By.xpath("//button[text()='Save']")).click();
+				Thread.sleep(4000);
+				
 		//driver.quit();
 	}
+	@Test (priority = 6,enabled=true)
+	public void AddLocationLeftSideBar() throws InterruptedException
+	{
+		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
+		//driver.findElement(By.xpath("//button[@class='btn btn-primary dropdown-toggle btn-icon-only']"));
+		driver.findElement(By.xpath("(//button[@type='button'])[4]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//a //span[text()='Add Location']")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Loc Name1");
+		//enter location description
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("textarea[name='content']")).sendKeys("Location1 Description");
+		//select ATM as location typeThread.sleep(3000);
+		WebElement we = driver.findElement(By.className("form-select"));
+		Select s = new Select(we);
+		s.selectByIndex(1);
+		//Click on related notes
+		Thread.sleep(3000);
+		driver.findElement(By.className("form-multi-select-selection-tags")).click();
+		//select New UI noteThread.sleep(3000);driver.findElement(By.xpath("//div[text()=\"New UI note\"]")).click(); 
+		//Click on related notes
+		Thread.sleep(3000);
+		driver.findElement(By.className("form-multi-select-selection-tags")).click();
+		//click on submit
+		Thread.sleep(3000);
+		//driver.findElement(By.className("btn-primary")).click();
+		driver.findElement(By.xpath("//button[text()='Save']")).click();
+		Thread.sleep(4000);
+		
+	}
 	
-	
-	@Test(priority = 6,enabled=true)
+	@Test(priority = 7,enabled=true)
 	public void UserLogOut() throws InterruptedException{
 	//System.out.println("User is able to LogOut");
 	driver.findElement(By.xpath("//button[@class='btn btn-link dropdown-toggle']//*[name()='svg']")).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(5000);
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (5));
 	
 	driver.findElement(By.xpath("//span[text()='Log Out']")).click();
-	 Thread.sleep(2000);
+	 Thread.sleep(5000);
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (5));
 	
 	

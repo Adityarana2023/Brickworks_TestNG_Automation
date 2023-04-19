@@ -44,7 +44,7 @@ public class AddMarkerLocationToMap {
 		driver.manage().timeouts ().implicitlyWait (Duration.ofSeconds (20));
 		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (20));
 		
-		driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+		driver.get("https://ces-skyfall-qa-manager.azurewebsites.net/login");
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 	}

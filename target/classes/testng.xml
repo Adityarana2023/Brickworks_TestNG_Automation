@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Brickworks Automation Suite">
+  <test name="Brickworks Test">
+    <classes>
+	  <class name="com.project.skyfall.Registeration"/>
+	  <class name="com.project.skyfall.Brickworks_Website"/>
+      <class name="com.project.skyfall.AddMarkerLocationToMap"/>
+      <class name="com.project.skyfall.Login_Automation_Script"/>
+      <class name="com.project.skyfall.Brickworks_Login_LogOut"/>
+      <class name="com.project.skyfall.TestNG_Annotation"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

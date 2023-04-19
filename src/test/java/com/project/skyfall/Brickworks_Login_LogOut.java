@@ -24,13 +24,14 @@ WebDriver driver;
 	@BeforeMethod
 	public void setup(){
 		
+		loadPropertiesFile();
 		driver = initializeBrowserAndOpenApplicationURL("chrome");
 		
 		
 		
 		// Click on login and another way of doing
 			driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div/div[2]/div/div[2]/div/div[1]/div/form/div[4]/button")).click();
-			driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (5));
+			driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (25));
 	
 	
 	

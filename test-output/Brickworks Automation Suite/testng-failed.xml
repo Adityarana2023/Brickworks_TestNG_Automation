@@ -3,10 +3,26 @@
 <suite name="Failed suite [Brickworks Automation Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Brickworks Test(failed)">
     <classes>
+      <class name="com.project.skyfall.TestNG_Annotation">
+        <methods>
+          <include name="afterTest"/>
+          <include name="beforeSuite"/>
+          <include name="MapSelectionPage"/>
+          <include name="afterClass"/>
+          <include name="UserLogOut"/>
+          <include name="afterSuite"/>
+          <include name="LoginTest"/>
+          <include name="start"/>
+          <include name="RegistrationTest"/>
+          <include name="beforeClass"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- com.project.skyfall.TestNG_Annotation -->
       <class name="com.project.skyfall.Brickworks_Login_LogOut">
         <methods>
           <include name="UserLogin"/>
           <include name="setup"/>
+          <include name="UserLogOut"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.project.skyfall.Brickworks_Login_LogOut -->
@@ -14,6 +30,8 @@
         <methods>
           <include name="start"/>
           <include name="addmarker"/>
+          <include name="ValidUserLogin"/>
+          <include name="searchMetMap"/>
         </methods>
       </class> <!-- com.project.skyfall.AddMarkerLocationToMap -->
       <class name="com.project.skyfall.Registeration">
@@ -21,6 +39,17 @@
           <include name="startRegistration"/>
         </methods>
       </class> <!-- com.project.skyfall.Registeration -->
+      <class name="com.project.skyfall.Brickworks_Website">
+        <methods>
+          <include name="CreateMarker"/>
+          <include name="start"/>
+          <include name="verifyProductNamePageTitle"/>
+          <include name="UserLogOut"/>
+          <include name="Aftermethod"/>
+          <include name="searchMetMap"/>
+          <include name="ValidUserLogin"/>
+        </methods>
+      </class> <!-- com.project.skyfall.Brickworks_Website -->
     </classes>
   </test> <!-- Brickworks Test(failed) -->
 </suite> <!-- Failed suite [Brickworks Automation Suite] -->

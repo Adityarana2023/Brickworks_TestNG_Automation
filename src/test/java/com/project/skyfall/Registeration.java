@@ -34,7 +34,7 @@ public void startRegistration() throws InterruptedException {
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (20));
 
 	
-	driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+	driver.get("https://ces-skyfall-stage.herokuapp.com/login");
 	Thread.sleep(2000);
 	driver.findElement(By.cssSelector("a[class='nav-link'] span")).click();
 	Thread.sleep(2000);

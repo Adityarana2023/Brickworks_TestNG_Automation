@@ -1,6 +1,9 @@
 package com.brickworks.qa.base;
 
+import java.io.File;
+import java.io.FileInputStream;
 import java.time.Duration;
+import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -16,6 +19,19 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Base {
 	WebDriver driver;
+	public Properties prop; // this is a global properties for all environment.
+	
+	public void loadPropertiesFile() {
+		prop = new Properties();
+		File propFile = new File (System.getProperty("user.dir")+"\\src\\main\\java\\com\\brickworks\\qa\\config\\config.properties");
+	try {
+		FileInputStream fis = new FileInputStream (propFile);
+		prop.load(fis);
+	} catch (Throwable e) {
+		e.printStackTrace();
+	}
+		
+	}
 	
 	@SuppressWarnings("deprecation")
 	public  WebDriver initializeBrowserAndOpenApplicationURL(String browserName) {
@@ -53,7 +69,8 @@ driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (20));
 	driver.manage().timeouts ().implicitlyWait (Duration.ofSeconds (Utilities.IMPLICIT_WAIT_TIME));
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (Utilities.PAGE_LOAD_TIME));
 	
-	driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+	//driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+	driver.get(prop.getProperty("url"));
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	return driver;
 }
