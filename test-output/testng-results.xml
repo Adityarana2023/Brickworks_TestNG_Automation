@@ -2,20 +2,20 @@
 <testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-06T14:21:05 IST" name="Default suite" finished-at="2023-05-06T14:22:59 IST" duration-ms="114326">
+  <suite started-at="2023-05-06T15:56:02 IST" name="Default suite" finished-at="2023-05-06T15:58:09 IST" duration-ms="127093">
     <groups>
     </groups>
-    <test started-at="2023-05-06T14:21:05 IST" name="Default test" finished-at="2023-05-06T14:22:59 IST" duration-ms="114326">
+    <test started-at="2023-05-06T15:56:02 IST" name="Default test" finished-at="2023-05-06T15:58:09 IST" duration-ms="127093">
       <class name="com.project.skyfall.Brickworks_Website">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:05 IST" name="start" finished-at="2023-05-06T14:21:14 IST" duration-ms="8890" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:02 IST" name="start" finished-at="2023-05-06T15:56:26 IST" duration-ms="23640" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="TS001_VerifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="TS001_VerifyProductNamePageTitle" finished-at="2023-05-06T14:21:14 IST" duration-ms="11" status="PASS">
+        <test-method signature="TS001_VerifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="TS001_VerifyProductNamePageTitle" finished-at="2023-05-06T15:56:26 IST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS001_VerifyProductNamePageTitle -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="Aftermethod" finished-at="2023-05-06T14:21:14 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="Aftermethod" finished-at="2023-05-06T15:56:26 IST" duration-ms="16" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,11 +26,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="TS002_ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="TS002_ValidUserLogin" finished-at="2023-05-06T14:21:14 IST" duration-ms="306" status="PASS">
+        <test-method signature="TS002_ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="TS002_ValidUserLogin" finished-at="2023-05-06T15:56:26 IST" duration-ms="181" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS002_ValidUserLogin -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="Aftermethod" finished-at="2023-05-06T14:21:14 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="Aftermethod" finished-at="2023-05-06T15:56:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="TS004_searchMetMap()[pri:3, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="TS004_searchMetMap" finished-at="2023-05-06T14:21:24 IST" duration-ms="10027" status="PASS">
+        <test-method signature="TS004_searchMetMap()[pri:3, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="TS004_searchMetMap" finished-at="2023-05-06T15:56:36 IST" duration-ms="9743" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS004_searchMetMap -->
-        <test-method signature="TS007_AddLocationLeftSideBar()[pri:5, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:24 IST" name="TS007_AddLocationLeftSideBar" finished-at="2023-05-06T14:21:48 IST" duration-ms="23377" status="PASS">
+        <test-method signature="TS007_AddLocationLeftSideBar()[pri:5, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:36 IST" name="TS007_AddLocationLeftSideBar" finished-at="2023-05-06T15:56:59 IST" duration-ms="22816" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS007_AddLocationLeftSideBar -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:24 IST" name="Aftermethod" finished-at="2023-05-06T14:21:24 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:36 IST" name="Aftermethod" finished-at="2023-05-06T15:56:36 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,7 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:48 IST" name="Aftermethod" finished-at="2023-05-06T14:21:48 IST" duration-ms="1" status="PASS">
+        <test-method signature="TS006_EditLocation()[pri:6, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:59 IST" name="TS006_EditLocation" finished-at="2023-05-06T15:57:20 IST" duration-ms="21742" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS006_EditLocation -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:59 IST" name="Aftermethod" finished-at="2023-05-06T15:56:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -71,15 +75,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="TS006_EditLocation()[pri:6, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:48 IST" name="TS006_EditLocation" finished-at="2023-05-06T14:22:10 IST" duration-ms="22174" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TS006_EditLocation -->
-        <test-method signature="TS005_CreateMarkerLocation()[pri:7, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:10 IST" name="TS005_CreateMarkerLocation" finished-at="2023-05-06T14:22:39 IST" duration-ms="29321" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TS005_CreateMarkerLocation -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:10 IST" name="Aftermethod" finished-at="2023-05-06T14:22:10 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:20 IST" name="Aftermethod" finished-at="2023-05-06T15:57:20 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,11 +86,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="TS008_deleteLocation()[pri:8, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:39 IST" name="TS008_deleteLocation" finished-at="2023-05-06T14:22:48 IST" duration-ms="9305" status="PASS">
+        <test-method signature="TS005_CreateMarkerLocation()[pri:7, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:20 IST" name="TS005_CreateMarkerLocation" finished-at="2023-05-06T15:57:49 IST" duration-ms="29084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS005_CreateMarkerLocation -->
+        <test-method signature="TS008_deleteLocation()[pri:8, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:49 IST" name="TS008_deleteLocation" finished-at="2023-05-06T15:57:59 IST" duration-ms="9241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS008_deleteLocation -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:39 IST" name="Aftermethod" finished-at="2023-05-06T14:22:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:49 IST" name="Aftermethod" finished-at="2023-05-06T15:57:49 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -105,7 +105,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:48 IST" name="Aftermethod" finished-at="2023-05-06T14:22:48 IST" duration-ms="2" status="PASS">
+        <test-method signature="TS009_UserLogOut()[pri:9, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:59 IST" name="TS009_UserLogOut" finished-at="2023-05-06T15:58:09 IST" duration-ms="10579" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS009_UserLogOut -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:59 IST" name="Aftermethod" finished-at="2023-05-06T15:57:59 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -116,11 +120,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="TS009_UserLogOut()[pri:9, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:48 IST" name="TS009_UserLogOut" finished-at="2023-05-06T14:22:59 IST" duration-ms="10814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TS009_UserLogOut -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:59 IST" name="Aftermethod" finished-at="2023-05-06T14:22:59 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:58:09 IST" name="Aftermethod" finished-at="2023-05-06T15:58:09 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
