@@ -21,6 +21,9 @@ public class Utilities {
 		String timestamp = date.toString().replace(" ","_").replace(":","_");
 		return "aditya"+timestamp+"@xperate.com";
 	}
+	
+
+	
 	public static void TakingScreenshot(WebDriver driver, String screenshotname) throws IOException 
 	{
 		

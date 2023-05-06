@@ -50,8 +50,13 @@ public class Brickworks_Website {
 	driver.manage().timeouts ().implicitlyWait (Duration.ofSeconds (50));
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (50));
 	
-	driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+	//invoke the webapp url :-->
+	
+	//driver.get("https://ces-skyfall-eu-uk-sou-qa-manager.azurewebsites.net/login");
+	driver.get("https://ces-skyfall-qa-manager.azurewebsites.net/login");
 	//driver.get("https://ces-skyfall-stage.herokuapp.com/login");
+	//driver.get("https://ces-skyfall-qa.herokuapp.com/login");
+	//driver.get("https://app.stage.brickworks.dev/login");
 	//driver.get("https://app.brickworks.live/login");
 	
 	
@@ -59,7 +64,7 @@ public class Brickworks_Website {
 	
 	}
 	@Test (priority = 1,enabled=true)
-public void verifyProductNamePageTitle() {
+public void TS001_VerifyProductNamePageTitle() {
 		
 	//get the actual value of the title
 	
@@ -83,7 +88,7 @@ public void verifyProductNamePageTitle() {
 	
 }
 	@Test(priority = 2,enabled=true)
-	public void ValidUserLogin(){
+	public void TS002_ValidUserLogin(){
 
 		WebElement textbx_Email =
 		driver.findElement(By.name("email"));
@@ -98,8 +103,8 @@ public void verifyProductNamePageTitle() {
 		
 		//driver.quit();
 	}
-	@Test (priority = 3,enabled=false)
-	public void InValidUserLogin() {
+	@Test (priority = 33,enabled=false)
+	public void TS003_InValidUserLogin() {
 		WebElement textbx_Email =
 				driver.findElement(By.name("email"));
 				textbx_Email.sendKeys("aditya1@xperate.com");
@@ -120,23 +125,16 @@ public void verifyProductNamePageTitle() {
 	}
 
 		
-	@Test (priority = 4,enabled=true)
-	public void searchMetMap() throws InterruptedException {
+	@Test (priority = 3,enabled=true)
+	public void TS004_searchMetMap() throws InterruptedException {
 	//Pinned First Checkbox
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
 	
-	driver.findElement(By.xpath("//label[@class='form-checkbox']//span")).click();
-	WebElement firstResult = new WebDriverWait(driver, Duration.ofSeconds(20))
-	        .until(ExpectedConditions.elementToBeClickable(By.xpath("//label[@class='form-checkbox']//span")));
-	//driver.findElement(By.id("checkbox")).click();
-	// Print the first result
-	System.out.println(firstResult.getText());
-	
-	
-	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (25));
+	//driver.findElement(By.xpath("//label[@class='form-checkbox']//span")).click();
 	//Search for map to map selection page
-	Thread.sleep(2000);
-	driver.findElement(By.xpath("//input[contains(@class,'form-control')]")).sendKeys("mets");
+	
+	driver.findElement(By.xpath("//*[@id=\"app\"]/div[1]/div[2]/div/div[2]/div/div/div[2]/div[3]/div[1]/input")).sendKeys("mets");
+	//driver.findElement(By.xpath("//div[@class='search-field']")).sendKeys("mets");
 	//Click on the map i.e. mets
 	Thread.sleep(3000);
 	
@@ -148,16 +146,26 @@ public void verifyProductNamePageTitle() {
 	
 	//driver.quit();
 	}
-	@Test (priority = 5,enabled=true)
-	public void CreateMarker() throws InterruptedException {
-		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
+	@Test (priority = 7,enabled=true)
+	public void TS005_CreateMarkerLocation() throws InterruptedException {
+		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (40));
 		//right click on the map
 				Thread.sleep(6000);
 				Actions a1 = new Actions(driver);
 				a1.contextClick(driver.findElement(By.xpath("//canvas[@class='mapboxgl-canvas']"))).perform();
-				//dd new location
+				driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
+				
+				//Initialize and wait till element(link) became clickable - timeout in 10 seconds
+				WebElement displayMarkerPopup = new WebDriverWait(driver, Duration.ofSeconds(20))
+				        .until(ExpectedConditions.elementToBeClickable(By.xpath("//canvas[@class='mapboxgl-canvas']")));
+				// Print the first result
+				System.out.println(displayMarkerPopup.getText());
+								
+				//Create for marker of location
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//div[@class='content-row'][1]")).click();
+				//driver.findElement(By.xpath("//*[@id=\"map\"]/div[4]/div[2]/div/div[2]/button")).click();
+				
 				//enter location name
 				Thread.sleep(3000);
 				driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Loc Name");
@@ -171,10 +179,12 @@ public void verifyProductNamePageTitle() {
 				//Click on related notes
 				Thread.sleep(3000);
 				driver.findElement(By.className("form-multi-select-selection-tags")).click();
-				//select New UI noteThread.sleep(3000);driver.findElement(By.xpath("//div[text()=\"New UI note\"]")).click(); 
 				//Click on related notes
 				Thread.sleep(3000);
-				driver.findElement(By.className("form-multi-select-selection-tags")).click();
+				//driver.findElement(By.className("form-multi-select-selection-tags")).click();
+				driver.findElement(By.xpath("//div /input[@class='form-multi-select-search']")).click();
+				driver.findElement(By.xpath("(//div[@class='form-multi-select-options'])[1]")).click();
+				driver.findElement(By.xpath("//div[@class='form-group']")).click();
 				//click on submit
 				Thread.sleep(3000);
 				//driver.findElement(By.className("btn-primary")).click();
@@ -184,7 +194,55 @@ public void verifyProductNamePageTitle() {
 		//driver.quit();
 	}
 	@Test (priority = 6,enabled=true)
-	public void AddLocationLeftSideBar() throws InterruptedException
+	public void TS006_EditLocation() throws InterruptedException {
+		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
+		// Find the element to edit
+
+		driver.findElement(By.xpath("(//div[@class='item-card-header'])[1]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//div /span[@class='icon-link'])[1]")).click();
+		Thread.sleep(3000);
+		
+		// Clear the current value and enter a new value
+		driver.findElement(By.xpath("//input[@placeholder='Location Name']")).clear();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//input[@placeholder='Location Name']")).sendKeys("Location Title");
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("//textarea[@class='form-control']")).clear();
+		driver.findElement(By.xpath("//textarea[@class='form-control']")).sendKeys("Location Desc.");
+		Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
+		Thread.sleep(3000);
+			
+		//driver.findElement(By.xpath("((//span[@class='icon-link'])[2]")).click();
+		//Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//div /select[@class='form-select'])[1]")).click();
+		//Thread.sleep(3000);
+		
+		//WebElement we = driver.findElement(By.className("form-select"));
+		//Select s = new Select(we);
+		//s.selectByIndex(1);
+		//driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
+		//Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
+		//Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//div /span[@class='icon-link'])[3]")).click();
+		//Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//div[@class='form-multi-select form-multi-select-selection-tags'])[1]")).click();
+		//driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
+		//Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
+		//Thread.sleep(3000);
+		//For Collapse Card  
+		driver.findElement(By.xpath("(//div[@class='item-card-header'])[1]")).click();
+	}
+	
+	
+	
+	@Test (priority = 5,enabled=true)
+	public void TS007_AddLocationLeftSideBar() throws InterruptedException
 	{
 		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (30));
 		//driver.findElement(By.xpath("//button[@class='btn btn-primary dropdown-toggle btn-icon-only']"));
@@ -203,10 +261,12 @@ public void verifyProductNamePageTitle() {
 		//Click on related notes
 		Thread.sleep(3000);
 		driver.findElement(By.className("form-multi-select-selection-tags")).click();
-		//select New UI noteThread.sleep(3000);driver.findElement(By.xpath("//div[text()=\"New UI note\"]")).click(); 
 		//Click on related notes
 		Thread.sleep(3000);
-		driver.findElement(By.className("form-multi-select-selection-tags")).click();
+		//driver.findElement(By.className("form-multi-select-selection-tags")).click();
+		driver.findElement(By.xpath("//div /input[@class='form-multi-select-search']")).click();
+		driver.findElement(By.xpath("(//div[@class='form-multi-select-options'])[1]")).click();
+		driver.findElement(By.xpath("//div[@class='form-group']")).click();
 		//click on submit
 		Thread.sleep(3000);
 		//driver.findElement(By.className("btn-primary")).click();
@@ -214,9 +274,19 @@ public void verifyProductNamePageTitle() {
 		Thread.sleep(4000);
 		
 	}
+	@Test(priority = 8,enabled=true)
+	public void TS008_deleteLocation() throws InterruptedException{
+		driver.findElement(By.xpath("//div[@class=\"show-section\"]")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
+		Thread.sleep(3000);
+		//driver.findElement(By.xpath("(//button[@type='button'])[6]")).click();
+		driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
+		Thread.sleep(3000);
+	}
 	
-	@Test(priority = 7,enabled=true)
-	public void UserLogOut() throws InterruptedException{
+	@Test(priority = 9,enabled=true)
+	public void TS009_UserLogOut() throws InterruptedException{
 	//System.out.println("User is able to LogOut");
 	driver.findElement(By.xpath("//button[@class='btn btn-link dropdown-toggle']//*[name()='svg']")).click();
 	 Thread.sleep(5000);

@@ -1,168 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="7" passed="5" failed="1" skipped="0">
+<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-04-17T18:11:27 IST" name="Default suite" finished-at="2023-04-17T18:12:51 IST" duration-ms="83800">
+  <suite started-at="2023-05-06T14:21:05 IST" name="Default suite" finished-at="2023-05-06T14:22:59 IST" duration-ms="114326">
     <groups>
     </groups>
-    <test started-at="2023-04-17T18:11:27 IST" name="Default test" finished-at="2023-04-17T18:12:51 IST" duration-ms="83800">
+    <test started-at="2023-05-06T14:21:05 IST" name="Default test" finished-at="2023-05-06T14:22:59 IST" duration-ms="114326">
       <class name="com.project.skyfall.Brickworks_Website">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:27 IST" name="start" finished-at="2023-04-17T18:11:38 IST" duration-ms="11144" status="PASS">
+        <test-method is-config="true" signature="start()[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:05 IST" name="start" finished-at="2023-05-06T14:21:14 IST" duration-ms="8890" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- start -->
-        <test-method signature="verifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:38 IST" name="verifyProductNamePageTitle" finished-at="2023-04-17T18:11:38 IST" duration-ms="41" status="PASS">
+        <test-method signature="TS001_VerifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="TS001_VerifyProductNamePageTitle" finished-at="2023-05-06T14:21:14 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyProductNamePageTitle -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:38 IST" name="Aftermethod" finished-at="2023-04-17T18:11:38 IST" duration-ms="14" status="PASS">
+        </test-method> <!-- TS001_VerifyProductNamePageTitle -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="Aftermethod" finished-at="2023-05-06T14:21:14 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyProductNamePageTitle status=SUCCESS method=Brickworks_Website.verifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=TS001_VerifyProductNamePageTitle status=SUCCESS method=Brickworks_Website.TS001_VerifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:38 IST" name="ValidUserLogin" finished-at="2023-04-17T18:11:39 IST" duration-ms="576" status="PASS">
+        <test-method signature="TS002_ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="TS002_ValidUserLogin" finished-at="2023-05-06T14:21:14 IST" duration-ms="306" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidUserLogin -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:39 IST" name="Aftermethod" finished-at="2023-04-17T18:11:39 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TS002_ValidUserLogin -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="Aftermethod" finished-at="2023-05-06T14:21:14 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=ValidUserLogin status=SUCCESS method=Brickworks_Website.ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=TS002_ValidUserLogin status=SUCCESS method=Brickworks_Website.TS002_ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="searchMetMap()[pri:4, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:39 IST" name="searchMetMap" finished-at="2023-04-17T18:11:50 IST" duration-ms="11267" status="PASS">
+        <test-method signature="TS004_searchMetMap()[pri:3, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:14 IST" name="TS004_searchMetMap" finished-at="2023-05-06T14:21:24 IST" duration-ms="10027" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchMetMap -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:50 IST" name="Aftermethod" finished-at="2023-04-17T18:11:50 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- TS004_searchMetMap -->
+        <test-method signature="TS007_AddLocationLeftSideBar()[pri:5, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:24 IST" name="TS007_AddLocationLeftSideBar" finished-at="2023-05-06T14:21:48 IST" duration-ms="23377" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS007_AddLocationLeftSideBar -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:24 IST" name="Aftermethod" finished-at="2023-05-06T14:21:24 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=searchMetMap status=SUCCESS method=Brickworks_Website.searchMetMap()[pri:4, instance:com.project.skyfall.Brickworks_Website@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=TS004_searchMetMap status=SUCCESS method=Brickworks_Website.TS004_searchMetMap()[pri:3, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="CreateMarker()[pri:5, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:11:50 IST" name="CreateMarker" finished-at="2023-04-17T18:12:15 IST" duration-ms="24567" status="FAIL">
-          <exception class="org.openqa.selenium.ElementNotInteractableException">
-            <message>
-              <![CDATA[element not interactable
-  (Session info: chrome=111.0.5563.148)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [933d4266aa451585187b18ac3c17608b, clickElement {id=f4e72853-42cb-40c2-b659-f4b1b51fba45}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53952}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53952/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (933d4266aa451585187b18ac3c17608b)] -> xpath: //div[@class='content-row'][1]]
-Session ID: 933d4266aa451585187b18ac3c17608b]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.148)
-Build info: version: '4.7.2', revision: '4d4020c3b7'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.6'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [933d4266aa451585187b18ac3c17608b, clickElement {id=f4e72853-42cb-40c2-b659-f4b1b51fba45}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.148, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:53952}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:53952/devtoo..., se:cdpVersion: 111.0.5563.148, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (933d4266aa451585187b18ac3c17608b)] -> xpath: //div[@class='content-row'][1]]
-Session ID: 933d4266aa451585187b18ac3c17608b
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-at com.project.skyfall.Brickworks_Website.CreateMarker(Brickworks_Website.java:160)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:829)
-at org.testng.TestRunner.run(TestRunner.java:602)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-at org.testng.TestNG.runSuites(TestNG.java:1099)
-at org.testng.TestNG.run(TestNG.java:1067)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.ElementNotInteractableException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CreateMarker -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:12:15 IST" name="Aftermethod" finished-at="2023-04-17T18:12:15 IST" duration-ms="678" status="PASS">
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:48 IST" name="Aftermethod" finished-at="2023-05-06T14:21:48 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CreateMarker status=FAILURE method=Brickworks_Website.CreateMarker()[pri:5, instance:com.project.skyfall.Brickworks_Website@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=TS007_AddLocationLeftSideBar status=SUCCESS method=Brickworks_Website.TS007_AddLocationLeftSideBar()[pri:5, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="AddLocationLeftSideBar()[pri:6, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:12:15 IST" name="AddLocationLeftSideBar" finished-at="2023-04-17T18:12:39 IST" duration-ms="23760" status="PASS">
+        <test-method signature="TS006_EditLocation()[pri:6, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:21:48 IST" name="TS006_EditLocation" finished-at="2023-05-06T14:22:10 IST" duration-ms="22174" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- AddLocationLeftSideBar -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:12:39 IST" name="Aftermethod" finished-at="2023-04-17T18:12:39 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TS006_EditLocation -->
+        <test-method signature="TS005_CreateMarkerLocation()[pri:7, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:10 IST" name="TS005_CreateMarkerLocation" finished-at="2023-05-06T14:22:39 IST" duration-ms="29321" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS005_CreateMarkerLocation -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:10 IST" name="Aftermethod" finished-at="2023-05-06T14:22:10 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AddLocationLeftSideBar status=SUCCESS method=Brickworks_Website.AddLocationLeftSideBar()[pri:6, instance:com.project.skyfall.Brickworks_Website@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=TS006_EditLocation status=SUCCESS method=Brickworks_Website.TS006_EditLocation()[pri:6, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Aftermethod -->
-        <test-method signature="UserLogOut()[pri:7, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:12:39 IST" name="UserLogOut" finished-at="2023-04-17T18:12:51 IST" duration-ms="11629" status="PASS">
+        <test-method signature="TS008_deleteLocation()[pri:8, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:39 IST" name="TS008_deleteLocation" finished-at="2023-05-06T14:22:48 IST" duration-ms="9305" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- UserLogOut -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@72c8e7b]" started-at="2023-04-17T18:12:51 IST" name="Aftermethod" finished-at="2023-04-17T18:12:51 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TS008_deleteLocation -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:39 IST" name="Aftermethod" finished-at="2023-05-06T14:22:39 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=UserLogOut status=SUCCESS method=Brickworks_Website.UserLogOut()[pri:7, instance:com.project.skyfall.Brickworks_Website@72c8e7b] output={null}]]]>
+                <![CDATA[[TestResult name=TS005_CreateMarkerLocation status=SUCCESS method=Brickworks_Website.TS005_CreateMarkerLocation()[pri:7, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:48 IST" name="Aftermethod" finished-at="2023-05-06T14:22:48 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS008_deleteLocation status=SUCCESS method=Brickworks_Website.TS008_deleteLocation()[pri:8, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Aftermethod -->
+        <test-method signature="TS009_UserLogOut()[pri:9, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:48 IST" name="TS009_UserLogOut" finished-at="2023-05-06T14:22:59 IST" duration-ms="10814" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS009_UserLogOut -->
+        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T14:22:59 IST" name="Aftermethod" finished-at="2023-05-06T14:22:59 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TS009_UserLogOut status=SUCCESS method=Brickworks_Website.TS009_UserLogOut()[pri:9, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
               </value>
             </param>
           </params>

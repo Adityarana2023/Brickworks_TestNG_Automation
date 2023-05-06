@@ -5,9 +5,13 @@
     <classes>
       <class name="com.project.skyfall.Brickworks_Website">
         <methods>
-          <include name="CreateMarker"/>
+          <include name="TS005_CreateMarkerLocation"/>
           <include name="start"/>
+          <include name="TS007_AddLocationLeftSideBar"/>
+          <include name="TS006_EditLocation"/>
           <include name="Aftermethod"/>
+          <include name="TS009_UserLogOut"/>
+          <include name="TS008_deleteLocation"/>
         </methods>
       </class> <!-- com.project.skyfall.Brickworks_Website -->
     </classes>

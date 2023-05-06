@@ -20,12 +20,16 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Brickworks_Login_LogOut extends Base{
 	//@BeforeMethod <-> @Test <-> @AfterMethod ==> This is a combination
+	public Brickworks_Login_LogOut () {
+		super();
+	}
+
 WebDriver driver;
 	@BeforeMethod
 	public void setup(){
 		
-		loadPropertiesFile();
-		driver = initializeBrowserAndOpenApplicationURL("chrome");
+		
+		driver = initializeBrowserAndOpenApplicationURL(prop.getProperty("browserName"));
 		
 		
 		
@@ -78,6 +82,12 @@ WebElement textbx_Email =
 		driver.findElement(By.name("password")).sendKeys("Aditya@123456");
 		driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (5));
 	}
+	@AfterMethod
+	public void tearDown1(){
+	driver.quit();
+
+	}
+	
 	
 	@Test (priority = 2,enabled=true)
 public void UserLogOut() throws InterruptedException {

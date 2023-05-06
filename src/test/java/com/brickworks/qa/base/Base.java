@@ -21,7 +21,7 @@ public class Base {
 	WebDriver driver;
 	public Properties prop; // this is a global properties for all environment.
 	
-	public void loadPropertiesFile() {
+	public Base() {
 		prop = new Properties();
 		File propFile = new File (System.getProperty("user.dir")+"\\src\\main\\java\\com\\brickworks\\qa\\config\\config.properties");
 	try {
@@ -70,8 +70,14 @@ driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (20));
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (Utilities.PAGE_LOAD_TIME));
 	
 	//driver.get("https://ces-skyfall-qa.herokuapp.com/login");
-	driver.get(prop.getProperty("url"));
+	driver.get(prop.getProperty("testurl"));
 	driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	return driver;
-}
+	return driver;}
+
+	public void tearDown() {
+		driver.close();
+		System.out.println("tearDown successfull");
+	
+	
+	}
 }
