@@ -1,137 +1,253 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="9" passed="8" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="8" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-05-06T15:56:02 IST" name="Default suite" finished-at="2023-05-06T15:58:09 IST" duration-ms="127093">
+  <suite started-at="2023-05-12T16:08:26 IST" name="Default suite" finished-at="2023-05-12T16:10:19 IST" duration-ms="112909">
     <groups>
     </groups>
-    <test started-at="2023-05-06T15:56:02 IST" name="Default test" finished-at="2023-05-06T15:58:09 IST" duration-ms="127093">
-      <class name="com.project.skyfall.Brickworks_Website">
-        <test-method is-config="true" signature="start()[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:02 IST" name="start" finished-at="2023-05-06T15:56:26 IST" duration-ms="23640" status="PASS">
+    <test started-at="2023-05-12T16:08:26 IST" name="Default test" finished-at="2023-05-12T16:10:19 IST" duration-ms="112909">
+      <class name="skyfallSmokeTest.SkyFallSmokeScript">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:26 IST" name="startReport" finished-at="2023-05-12T16:08:26 IST" duration-ms="197" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- start -->
-        <test-method signature="TS001_VerifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="TS001_VerifyProductNamePageTitle" finished-at="2023-05-06T15:56:26 IST" duration-ms="9" status="PASS">
+        </test-method> <!-- startReport -->
+        <test-method signature="LaunchBrowserAndOpenURL()[pri:1, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:26 IST" name="LaunchBrowserAndOpenURL" finished-at="2023-05-12T16:08:34 IST" duration-ms="7478" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS001_VerifyProductNamePageTitle -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="Aftermethod" finished-at="2023-05-06T15:56:26 IST" duration-ms="16" status="PASS">
+        </test-method> <!-- LaunchBrowserAndOpenURL -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="getTestResult" finished-at="2023-05-12T16:08:34 IST" duration-ms="12" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS001_VerifyProductNamePageTitle status=SUCCESS method=Brickworks_Website.TS001_VerifyProductNamePageTitle()[pri:1, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=LaunchBrowserAndOpenURL status=SUCCESS method=SkyFallSmokeScript.LaunchBrowserAndOpenURL()[pri:1, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method signature="TS002_ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="TS002_ValidUserLogin" finished-at="2023-05-06T15:56:26 IST" duration-ms="181" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method signature="VerifyProductNamePageTitle()[pri:2, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="VerifyProductNamePageTitle" finished-at="2023-05-12T16:08:34 IST" duration-ms="15" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Brickworks Site Manager11] but found [Brickworks Site Manager]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Brickworks Site Manager11] but found [Brickworks Site Manager]
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.failNotEquals(Assert.java:1577)
+at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+at org.testng.Assert.assertEquals(Assert.java:131)
+at org.testng.Assert.assertEquals(Assert.java:655)
+at org.testng.Assert.assertEquals(Assert.java:665)
+at skyfallSmokeTest.SkyFallSmokeScript.VerifyProductNamePageTitle(SkyFallSmokeScript.java:120)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS002_ValidUserLogin -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="Aftermethod" finished-at="2023-05-06T15:56:26 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- VerifyProductNamePageTitle -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="getTestResult" finished-at="2023-05-12T16:08:34 IST" duration-ms="24" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS002_ValidUserLogin status=SUCCESS method=Brickworks_Website.TS002_ValidUserLogin()[pri:2, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyProductNamePageTitle status=FAILURE method=SkyFallSmokeScript.VerifyProductNamePageTitle()[pri:2, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method signature="TS004_searchMetMap()[pri:3, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:26 IST" name="TS004_searchMetMap" finished-at="2023-05-06T15:56:36 IST" duration-ms="9743" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method signature="ValidUserLogin()[pri:3, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="ValidUserLogin" finished-at="2023-05-12T16:08:34 IST" duration-ms="216" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS004_searchMetMap -->
-        <test-method signature="TS007_AddLocationLeftSideBar()[pri:5, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:36 IST" name="TS007_AddLocationLeftSideBar" finished-at="2023-05-06T15:56:59 IST" duration-ms="22816" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TS007_AddLocationLeftSideBar -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:36 IST" name="Aftermethod" finished-at="2023-05-06T15:56:36 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- ValidUserLogin -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="getTestResult" finished-at="2023-05-12T16:08:34 IST" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS004_searchMetMap status=SUCCESS method=Brickworks_Website.TS004_searchMetMap()[pri:3, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=ValidUserLogin status=SUCCESS method=SkyFallSmokeScript.ValidUserLogin()[pri:3, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method signature="TS006_EditLocation()[pri:6, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:59 IST" name="TS006_EditLocation" finished-at="2023-05-06T15:57:20 IST" duration-ms="21742" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method signature="InValidUserLogin()[pri:4, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="InValidUserLogin" finished-at="2023-05-12T16:08:34 IST" duration-ms="2" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[skipping this test case with exception..]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: skipping this test case with exception..
+at skyfallSmokeTest.SkyFallSmokeScript.InValidUserLogin(SkyFallSmokeScript.java:158)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS006_EditLocation -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:56:59 IST" name="Aftermethod" finished-at="2023-05-06T15:56:59 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- InValidUserLogin -->
+        <test-method signature="VerifySearchMetsMap()[pri:5, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="VerifySearchMetsMap" finished-at="2023-05-12T16:08:44 IST" duration-ms="9608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchMetsMap -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:34 IST" name="getTestResult" finished-at="2023-05-12T16:08:34 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS007_AddLocationLeftSideBar status=SUCCESS method=Brickworks_Website.TS007_AddLocationLeftSideBar()[pri:5, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=InValidUserLogin status=SKIP method=SkyFallSmokeScript.InValidUserLogin()[pri:4, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:20 IST" name="Aftermethod" finished-at="2023-05-06T15:57:20 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method signature="AddLocationLeftSideBar()[pri:6, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:44 IST" name="AddLocationLeftSideBar" finished-at="2023-05-12T16:09:07 IST" duration-ms="23399" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddLocationLeftSideBar -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:08:44 IST" name="getTestResult" finished-at="2023-05-12T16:08:44 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS006_EditLocation status=SUCCESS method=Brickworks_Website.TS006_EditLocation()[pri:6, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=VerifySearchMetsMap status=SUCCESS method=SkyFallSmokeScript.VerifySearchMetsMap()[pri:5, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method signature="TS005_CreateMarkerLocation()[pri:7, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:20 IST" name="TS005_CreateMarkerLocation" finished-at="2023-05-06T15:57:49 IST" duration-ms="29084" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method signature="EditLocation()[pri:7, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:09:07 IST" name="EditLocation" finished-at="2023-05-12T16:09:29 IST" duration-ms="21709" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS005_CreateMarkerLocation -->
-        <test-method signature="TS008_deleteLocation()[pri:8, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:49 IST" name="TS008_deleteLocation" finished-at="2023-05-06T15:57:59 IST" duration-ms="9241" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TS008_deleteLocation -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:49 IST" name="Aftermethod" finished-at="2023-05-06T15:57:49 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- EditLocation -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:09:07 IST" name="getTestResult" finished-at="2023-05-12T16:09:07 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS005_CreateMarkerLocation status=SUCCESS method=Brickworks_Website.TS005_CreateMarkerLocation()[pri:7, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=AddLocationLeftSideBar status=SUCCESS method=SkyFallSmokeScript.AddLocationLeftSideBar()[pri:6, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method signature="TS009_UserLogOut()[pri:9, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:59 IST" name="TS009_UserLogOut" finished-at="2023-05-06T15:58:09 IST" duration-ms="10579" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method signature="CreateMarkerLocation()[pri:8, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:09:29 IST" name="CreateMarkerLocation" finished-at="2023-05-12T16:09:58 IST" duration-ms="29312" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS009_UserLogOut -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:57:59 IST" name="Aftermethod" finished-at="2023-05-06T15:57:59 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- CreateMarkerLocation -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:09:29 IST" name="getTestResult" finished-at="2023-05-12T16:09:29 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS008_deleteLocation status=SUCCESS method=Brickworks_Website.TS008_deleteLocation()[pri:8, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=EditLocation status=SUCCESS method=SkyFallSmokeScript.EditLocation()[pri:7, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-        <test-method is-config="true" signature="Aftermethod(org.testng.ITestResult)[pri:0, instance:com.project.skyfall.Brickworks_Website@5c7933ad]" started-at="2023-05-06T15:58:09 IST" name="Aftermethod" finished-at="2023-05-06T15:58:09 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- getTestResult -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:09:58 IST" name="getTestResult" finished-at="2023-05-12T16:09:58 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=TS009_UserLogOut status=SUCCESS method=Brickworks_Website.TS009_UserLogOut()[pri:9, instance:com.project.skyfall.Brickworks_Website@5c7933ad] output={null}]]]>
+                <![CDATA[[TestResult name=CreateMarkerLocation status=SUCCESS method=SkyFallSmokeScript.CreateMarkerLocation()[pri:8, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Aftermethod -->
-      </class> <!-- com.project.skyfall.Brickworks_Website -->
+        </test-method> <!-- getTestResult -->
+        <test-method signature="deleteLocation()[pri:9, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:09:58 IST" name="deleteLocation" finished-at="2023-05-12T16:10:08 IST" duration-ms="9273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLocation -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:10:08 IST" name="getTestResult" finished-at="2023-05-12T16:10:08 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=deleteLocation status=SUCCESS method=SkyFallSmokeScript.deleteLocation()[pri:9, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResult -->
+        <test-method signature="UserLogOut()[pri:10, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:10:08 IST" name="UserLogOut" finished-at="2023-05-12T16:10:18 IST" duration-ms="10863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserLogOut -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:10:18 IST" name="tearDown" finished-at="2023-05-12T16:10:19 IST" duration-ms="738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="getTestResult(org.testng.ITestResult)[pri:0, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda]" started-at="2023-05-12T16:10:18 IST" name="getTestResult" finished-at="2023-05-12T16:10:18 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserLogOut status=SUCCESS method=SkyFallSmokeScript.UserLogOut()[pri:10, instance:skyfallSmokeTest.SkyFallSmokeScript@3feb2dda] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getTestResult -->
+      </class> <!-- skyfallSmokeTest.SkyFallSmokeScript -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
