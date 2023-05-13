@@ -3,13 +3,21 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.project.skyfall.Brickworks_Website">
+      <class name="skyfallSmokeTest.SkyFallSmokeScript">
         <methods>
-          <include name="start"/>
-          <include name="Aftermethod"/>
-          <include name="TS001_VerifyProductNamePageTitle"/>
+          <include name="startReport"/>
+          <include name="UserLogOut"/>
+          <include name="AddLocationLeftSideBar"/>
+          <include name="InValidUserLogin"/>
+          <include name="tearDown"/>
+          <include name="VerifyProductNamePageTitle"/>
+          <include name="deleteLocation"/>
+          <include name="VerifySearchMetsMap"/>
+          <include name="getTestResult"/>
+          <include name="EditLocation"/>
+          <include name="CreateMarkerLocation"/>
         </methods>
-      </class> <!-- com.project.skyfall.Brickworks_Website -->
+      </class> <!-- skyfallSmokeTest.SkyFallSmokeScript -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

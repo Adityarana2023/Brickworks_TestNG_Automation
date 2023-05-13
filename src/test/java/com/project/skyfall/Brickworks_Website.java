@@ -123,8 +123,6 @@ public class Brickworks_Website {
 		driver.quit();
 
 	}
-
-
 	@Test (priority = 3,enabled=true)
 	public void TS004_searchMetMap() throws InterruptedException {
 		//Pinned First Checkbox
@@ -238,9 +236,6 @@ public class Brickworks_Website {
 		//For Collapse Card  
 		driver.findElement(By.xpath("(//div[@class='item-card-header'])[1]")).click();
 	}
-
-
-
 	@Test (priority = 5,enabled=true)
 	public void TS007_AddLocationLeftSideBar() throws InterruptedException
 	{
@@ -284,7 +279,6 @@ public class Brickworks_Website {
 		driver.findElement(By.xpath("(//button[@type='button'])[5]")).click();
 		Thread.sleep(3000);
 	}
-
 	@Test(priority = 9,enabled=true)
 	public void TS009_UserLogOut() throws InterruptedException{
 		//System.out.println("User is able to LogOut");
@@ -299,7 +293,8 @@ public class Brickworks_Website {
 
 		driver.quit();
 	}
-
+	
+	
 	@AfterMethod
 	public void Aftermethod(ITestResult result) throws IOException
 	{
