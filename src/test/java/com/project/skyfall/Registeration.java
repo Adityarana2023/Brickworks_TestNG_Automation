@@ -34,7 +34,8 @@ public void startRegistration() throws InterruptedException {
 	driver.manage().timeouts ().pageLoadTimeout (Duration.ofSeconds (20));
 
 	
-	driver.get("https://ces-skyfall-stage.herokuapp.com/login");
+	//driver.get("https://ces-skyfall-stage.herokuapp.com/login");
+	driver.get("https://app.stage.brickworks.dev/login");
 	Thread.sleep(2000);
 	driver.findElement(By.cssSelector("a[class='nav-link'] span")).click();
 	Thread.sleep(2000);
@@ -44,9 +45,9 @@ public void startRegistration() throws InterruptedException {
 	Thread.sleep(2000);
 	driver.findElement(By.name("company")).sendKeys("Xperate System");
 	Thread.sleep(2000);
-	driver.findElement(By.name("phone")).sendKeys("9971761302");
+	driver.findElement(By.name("phone")).sendKeys("5417543011");
 	Thread.sleep(2000);
-	driver.findElement(By.xpath("(//input[@placeholder='Password'])[2]")).sendKeys("Aditya123456");
+	driver.findElement(By.xpath("(//input[@placeholder='Password'])[2]")).sendKeys("Aditya@123456");
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("(//input[@placeholder='Confirm Password'])[1]")).sendKeys("Aditya@123456");
 	Thread.sleep(2000);
@@ -54,7 +55,7 @@ public void startRegistration() throws InterruptedException {
 	Thread.sleep(2000);
 	driver.findElement(By.xpath("(//*[name()='svg'][@class='custom-icon icon-tabler icon-tabler-eye-off'])[2]")).click();
 	Thread.sleep(2000);
-	driver.findElement(By.xpath("(//button[normalize-space()='Create An Account'])[1]")).click();
+	driver.findElement(By.xpath("(//button[normalize-space()='Create An Account']")).click();
 	driver.quit();
 }
 

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>10/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/3/1</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Mar 23 18:09:22 IST 2023</td>
+<td>Started on:</td><td>Thu Jun 08 16:11:48 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>120 seconds (120024 ms)</td>
+<tr><td>Total time:</td><td>366 seconds (366898 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,98 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.project.skyfall.Brickworks_Login_LogOut.setup()'><b>setup</b><br>Test class: com.project.skyfall.Brickworks_Login_LogOut</td>
-<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63400/devtools/browser/e16268c7-1445-4276-85c3-65539ac71178
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:260)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
-	at com.brickworks.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:20)
-	at com.project.skyfall.Brickworks_Login_LogOut.setup(Brickworks_Login_LogOut.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1189187821", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1189187821'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63400/devtools/browser/e16268c7-1445-4276-85c3-65539ac71178
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:260)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
-	at com.brickworks.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:20)
-	at com.project.skyfall.Brickworks_Login_LogOut.setup(Brickworks_Login_LogOut.java:27)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:829)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>1</td>
-<td>com.project.skyfall.Brickworks_Login_LogOut@5ddeb7cb</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='com.project.skyfall.Brickworks_Login_LogOut.tearDown()'><b>tearDown</b><br>Test class: com.project.skyfall.Brickworks_Login_LogOut</td>
-<td></td>
-<td>0</td>
-<td>com.project.skyfall.Brickworks_Login_LogOut@5ddeb7cb</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-failed'>
 <tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -168,52 +76,19 @@ Driver info: driver.version: ChromeDriver
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.project.skyfall.AddMarkerLocationToMap.addmarker()'><b>addmarker</b><br>Test class: com.project.skyfall.AddMarkerLocationToMap</td>
-<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.65)
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62c7d51909ffaf528e6e28078f2cbea4, clickElement {id=7760e6ab-0a34-4512-8524-aa39a224eccc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63223/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (62c7d51909ffaf528e6e28078f2cbea4)] -&gt; xpath: //div[@class=&apos;content-row&apos;][1]]
-Session ID: 62c7d51909ffaf528e6e28078f2cbea4
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.project.skyfall.AddMarkerLocationToMap.addmarker(AddMarkerLocationToMap.java:104)
+<td title='com.project.skyfall.Brickworks_Website.TS001_VerifyProductNamePageTitle()'><b>TS001_VerifyProductNamePageTitle</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td><div><pre>java.lang.AssertionError: expected [Skyfall Site Manager] but found [Brickworks Site Manager]
+	at com.project.skyfall.Brickworks_Website.TS001_VerifyProductNamePageTitle(Brickworks_Website.java:77)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1149993098", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1149993098'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
-  (Session info: chrome=111.0.5563.65)
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [62c7d51909ffaf528e6e28078f2cbea4, clickElement {id=7760e6ab-0a34-4512-8524-aa39a224eccc}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 111.0.5563.64 (c710e93d5b63..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63223}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:63223/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on WINDOWS (62c7d51909ffaf528e6e28078f2cbea4)] -&gt; xpath: //div[@class=&apos;content-row&apos;][1]]
-Session ID: 62c7d51909ffaf528e6e28078f2cbea4
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
-	at com.project.skyfall.AddMarkerLocationToMap.addmarker(AddMarkerLocationToMap.java:104)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace353489239", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace353489239'><pre>java.lang.AssertionError: expected [Skyfall Site Manager] but found [Brickworks Site Manager]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.project.skyfall.Brickworks_Website.TS001_VerifyProductNamePageTitle(Brickworks_Website.java:77)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -243,8 +118,170 @@ Session ID: 62c7d51909ffaf528e6e28078f2cbea4
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>19</td>
-<td>com.project.skyfall.AddMarkerLocationToMap@24569dba</td></tr>
+<td>0</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.deleteLocation()'><b>deleteLocation</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td><div><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span [@class=&apos;action delete&apos;])[1] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span [@class=&apos;action delete&apos;])[1]&apos; is not a valid XPath expression.
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2e7ef431672f2917847e93d66a96a15, findElement {using=xpath, value=//span [@class=&apos;action delete&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57188/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2e7ef431672f2917847e93d66a96a15
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at skyfallSmokeTest.SkyFallSmokeScript.deleteLocation(SkyFallSmokeScript.java:270)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace222927891", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace222927891'><pre>org.openqa.selenium.InvalidSelectorException: invalid selector: Unable to locate an element with the xpath expression //span [@class=&apos;action delete&apos;])[1] because of the following error:
+SyntaxError: Failed to execute &apos;evaluate&apos; on &apos;Document&apos;: The string &apos;//span [@class=&apos;action delete&apos;])[1]&apos; is not a valid XPath expression.
+  (Session info: chrome=113.0.5672.127)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#invalid_selector_exception
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d2e7ef431672f2917847e93d66a96a15, findElement {using=xpath, value=//span [@class=&apos;action delete&apos;])[1]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57188}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57188/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d2e7ef431672f2917847e93d66a96a15
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:351)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:343)
+	at skyfallSmokeTest.SkyFallSmokeScript.deleteLocation(SkyFallSmokeScript.java:270)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>3</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='com.project.skyfall.Brickworks_Website.TS005_CreateMarkerLocation()'><b>TS005_CreateMarkerLocation</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d02f61b7f68c500a0b755f9ce2c19ae, clickElement {id=64F3BE5A6AE59011CC75402652993E6E_element_96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57146/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9d02f61b7f68c500a0b755f9ce2c19ae)] -&gt; xpath: //div[@class=&apos;content-row&apos;][1]]
+Session ID: 9d02f61b7f68c500a0b755f9ce2c19ae
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.project.skyfall.Brickworks_Website.TS005_CreateMarkerLocation(Brickworks_Website.java:165)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace71364493", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace71364493'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=113.0.5672.127)
+Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d02f61b7f68c500a0b755f9ce2c19ae, clickElement {id=64F3BE5A6AE59011CC75402652993E6E_element_96}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.127, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: C:\Users\ADITYA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:57146}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:57146/devtoo..., se:cdpVersion: 113.0.5672.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (9d02f61b7f68c500a0b755f9ce2c19ae)] -&gt; xpath: //div[@class=&apos;content-row&apos;][1]]
+Session ID: 9d02f61b7f68c500a0b755f9ce2c19ae
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:535)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at com.project.skyfall.Brickworks_Website.TS005_CreateMarkerLocation(Brickworks_Website.java:165)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+	at org.testng.TestNG.runSuites(TestNG.java:1099)
+	at org.testng.TestNG.run(TestNG.java:1067)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>20</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -255,55 +292,105 @@ Session ID: 62c7d51909ffaf528e6e28078f2cbea4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.project.skyfall.Brickworks_Website.searchMetMap()'><b>searchMetMap</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.CreateMarkerNotes()'><b>CreateMarkerNotes</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>38</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='com.project.skyfall.Brickworks_Website.TS002_ValidUserLogin()'><b>TS002_ValidUserLogin</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td></td>
+<td>0</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.AddLocationLeftSideBar()'><b>AddLocationLeftSideBar</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>23</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.EditLocation()'><b>EditLocation</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>23</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.ValidUserLogin()'><b>ValidUserLogin</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>0</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.DeleteNoteCard()'><b>DeleteNoteCard</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>0</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.LaunchBrowserAndOpenURL()'><b>LaunchBrowserAndOpenURL</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>11</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='com.project.skyfall.Brickworks_Website.TS009_UserLogOut()'><b>TS009_UserLogOut</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td></td>
+<td>11</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.UserLogOut()'><b>UserLogOut</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>11</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='com.project.skyfall.Brickworks_Website.TS004_searchMetMap()'><b>TS004_searchMetMap</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
 <td></td>
 <td>10</td>
-<td>com.project.skyfall.Brickworks_Website@8462f31</td></tr>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
 <tr>
-<td title='com.project.skyfall.AddMarkerLocationToMap.ValidUserLogin()'><b>ValidUserLogin</b><br>Test class: com.project.skyfall.AddMarkerLocationToMap</td>
+<td title='com.project.skyfall.Brickworks_Website.TS007_AddLocationLeftSideBar()'><b>TS007_AddLocationLeftSideBar</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td></td>
+<td>23</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.CreateMarkerLocation()'><b>CreateMarkerLocation</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>29</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.AddNotesCard()'><b>AddNotesCard</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>13</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.CreateMarkerIncidents()'><b>CreateMarkerIncidents</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>48</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.VerifySearchMetsMap()'><b>VerifySearchMetsMap</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>9</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='com.project.skyfall.Brickworks_Website.TS006_EditLocation()'><b>TS006_EditLocation</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td></td>
+<td>22</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
+<tr>
+<td title='com.project.skyfall.Brickworks_Website.TS008_deleteLocation()'><b>TS008_deleteLocation</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td></td>
+<td>9</td>
+<td>com.project.skyfall.Brickworks_Website@4a8355dd</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.AddIncidentsCard()'><b>AddIncidentsCard</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td></td>
+<td>43</td>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
+<tr>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.DeleteIncidentsCard()'><b>DeleteIncidentsCard</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
 <td></td>
 <td>0</td>
-<td>com.project.skyfall.AddMarkerLocationToMap@24569dba</td></tr>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
 <tr>
-<td title='com.project.skyfall.AddMarkerLocationToMap.searchMetMap()'><b>searchMetMap</b><br>Test class: com.project.skyfall.AddMarkerLocationToMap</td>
-<td></td>
-<td>10</td>
-<td>com.project.skyfall.AddMarkerLocationToMap@24569dba</td></tr>
-<tr>
-<td title='com.project.skyfall.Brickworks_Website.ValidUserLogin()'><b>ValidUserLogin</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
+<td title='skyfallSmokeTest.SkyFallSmokeScript.VerifyProductNamePageTitle()'><b>VerifyProductNamePageTitle</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
 <td></td>
 <td>0</td>
-<td>com.project.skyfall.Brickworks_Website@8462f31</td></tr>
-<tr>
-<td title='com.project.skyfall.Registeration.startRegistration()'><b>startRegistration</b><br>Test class: com.project.skyfall.Registeration</td>
-<td></td>
-<td>30</td>
-<td>com.project.skyfall.Registeration@17f9d882</td></tr>
-<tr>
-<td title='com.project.skyfall.Brickworks_Website.CreateMarker()'><b>CreateMarker</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
-<td></td>
-<td>24</td>
-<td>com.project.skyfall.Brickworks_Website@8462f31</td></tr>
-<tr>
-<td title='com.project.skyfall.TestNG_Annotation.LoginTest()'><b>LoginTest</b><br>Test class: com.project.skyfall.TestNG_Annotation</td>
-<td></td>
-<td>0</td>
-<td>com.project.skyfall.TestNG_Annotation@7c37508a</td></tr>
-<tr>
-<td title='com.project.skyfall.TestNG_Annotation.MapSelectionPage()'><b>MapSelectionPage</b><br>Test class: com.project.skyfall.TestNG_Annotation</td>
-<td></td>
-<td>0</td>
-<td>com.project.skyfall.TestNG_Annotation@7c37508a</td></tr>
-<tr>
-<td title='com.project.skyfall.Brickworks_Website.UserLogOut()'><b>UserLogOut</b><br>Test class: com.project.skyfall.Brickworks_Website</td>
-<td></td>
-<td>5</td>
-<td>com.project.skyfall.Brickworks_Website@8462f31</td></tr>
-<tr>
-<td title='com.project.skyfall.TestNG_Annotation.RegistrationTest()'><b>RegistrationTest</b><br>Test class: com.project.skyfall.TestNG_Annotation</td>
-<td></td>
-<td>0</td>
-<td>com.project.skyfall.TestNG_Annotation@7c37508a</td></tr>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -314,49 +401,19 @@ Session ID: 62c7d51909ffaf528e6e28078f2cbea4
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.project.skyfall.Brickworks_Login_LogOut.UserLogin()'><b>UserLogin</b><br>Test class: com.project.skyfall.Brickworks_Login_LogOut</td>
-<td><div><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63400/devtools/browser/e16268c7-1445-4276-85c3-65539ac71178
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:260)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
-	at com.brickworks.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:20)
-	at com.project.skyfall.Brickworks_Login_LogOut.setup(Brickworks_Login_LogOut.java:27)
+<td title='skyfallSmokeTest.SkyFallSmokeScript.InValidUserLogin()'><b>InValidUserLogin</b><br>Test class: skyfallSmokeTest.SkyFallSmokeScript</td>
+<td><div><pre>org.testng.SkipException: skipping this test case with exception..
+	at skyfallSmokeTest.SkyFallSmokeScript.InValidUserLogin(SkyFallSmokeScript.java:163)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace390010388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace390010388'><pre>org.openqa.selenium.remote.http.ConnectionFailedException: Unable to establish websocket connection to http://localhost:63400/devtools/browser/e16268c7-1445-4276-85c3-65539ac71178
-Build info: version: &apos;4.7.2&apos;, revision: &apos;4d4020c3b7&apos;
-System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.6&apos;
-Driver info: driver.version: ChromeDriver
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.&lt;init&gt;(NettyWebSocket.java:102)
-	at org.openqa.selenium.remote.http.netty.NettyWebSocket.lambda$create$3(NettyWebSocket.java:128)
-	at org.openqa.selenium.remote.http.netty.NettyClient.openSocket(NettyClient.java:107)
-	at org.openqa.selenium.devtools.Connection.&lt;init&gt;(Connection.java:78)
-	at org.openqa.selenium.chromium.ChromiumDriver.lambda$new$2(ChromiumDriver.java:116)
-	at java.base/java.util.Optional.map(Optional.java:260)
-	at org.openqa.selenium.chromium.ChromiumDriver.&lt;init&gt;(ChromiumDriver.java:114)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:82)
-	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:50)
-	at com.brickworks.qa.base.Base.initializeBrowserAndOpenApplicationURL(Base.java:20)
-	at com.project.skyfall.Brickworks_Login_LogOut.setup(Brickworks_Login_LogOut.java:27)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1589640004", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1589640004'><pre>org.testng.SkipException: skipping this test case with exception..
+	at skyfallSmokeTest.SkyFallSmokeScript.InValidUserLogin(SkyFallSmokeScript.java:163)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
-	at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
 	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
 	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
 	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
@@ -381,7 +438,7 @@ Driver info: driver.version: ChromeDriver
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
 <td>0</td>
-<td>com.project.skyfall.Brickworks_Login_LogOut@5ddeb7cb</td></tr>
+<td>skyfallSmokeTest.SkyFallSmokeScript@7fd50002</td></tr>
 </table><p>
 </body>
 </html>

@@ -28,7 +28,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class Brickworks_Website {
 
 	public static WebDriver driver;
-
+	
 	@SuppressWarnings("deprecation")
 	@BeforeTest
 	public void start(){
@@ -53,10 +53,11 @@ public class Brickworks_Website {
 		//invoke the webapp url :-->
 
 		//driver.get("https://ces-skyfall-eu-uk-sou-qa-manager.azurewebsites.net/login");
-		driver.get("https://ces-skyfall-qa-manager.azurewebsites.net/login");
+		//driver.get("https://ces-skyfall-qa-manager.azurewebsites.net/login");
 		//driver.get("https://ces-skyfall-stage.herokuapp.com/login");
 		//driver.get("https://ces-skyfall-qa.herokuapp.com/login");
 		//driver.get("https://app.stage.brickworks.dev/login");
+		driver.get("https://ces-skyfall-wes-us-stage.azurewebsites.net/login");
 		//driver.get("https://app.brickworks.live/login");
 
 
@@ -70,7 +71,7 @@ public class Brickworks_Website {
 
 		String ActualTitle = driver.getTitle();
 
-		String ExpectedProductNamePageTitle = "Brickworks Site Manager11";
+		String ExpectedProductNamePageTitle = "Skyfall Site Manager";
 
 		//compare the actual title with the expected title
 		Assert.assertEquals(ActualTitle, ExpectedProductNamePageTitle);
@@ -293,8 +294,7 @@ public class Brickworks_Website {
 
 		driver.quit();
 	}
-	
-	
+		
 	@AfterMethod
 	public void Aftermethod(ITestResult result) throws IOException
 	{

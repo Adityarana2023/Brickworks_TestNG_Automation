@@ -4,6 +4,7 @@
   <test thread-count="5" name="Test">
     <classes>
       <class name="com.project.skyfall.Registeration"/>
+      <class name="skyfallSmokeTest.SkyFallSmokeScript"/>
 	  <class name="com.project.skyfall.Brickworks_Website"/>
       <class name="com.project.skyfall.AddMarkerLocationToMap"/>
       <class name="com.project.skyfall.Login_Automation_Script"/>

@@ -3,19 +3,23 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.project.skyfall.Brickworks_Login_LogOut">
+      <class name="skyfallSmokeTest.SkyFallSmokeScript">
         <methods>
-          <include name="UserLogin"/>
-          <include name="setup"/>
+          <include name="startReport"/>
           <include name="tearDown"/>
+          <include name="InValidUserLogin"/>
+          <include name="deleteLocation"/>
+          <include name="getTestResult"/>
         </methods>
-      </class> <!-- com.project.skyfall.Brickworks_Login_LogOut -->
-      <class name="com.project.skyfall.AddMarkerLocationToMap">
+      </class> <!-- skyfallSmokeTest.SkyFallSmokeScript -->
+      <class name="com.project.skyfall.Brickworks_Website">
         <methods>
           <include name="start"/>
-          <include name="addmarker"/>
+          <include name="TS005_CreateMarkerLocation"/>
+          <include name="Aftermethod"/>
+          <include name="TS001_VerifyProductNamePageTitle"/>
         </methods>
-      </class> <!-- com.project.skyfall.AddMarkerLocationToMap -->
+      </class> <!-- com.project.skyfall.Brickworks_Website -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

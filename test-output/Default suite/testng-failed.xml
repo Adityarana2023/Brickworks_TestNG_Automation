@@ -5,17 +5,17 @@
     <classes>
       <class name="skyfallSmokeTest.SkyFallSmokeScript">
         <methods>
+          <include name="AddIncidentsCard"/>
           <include name="startReport"/>
-          <include name="UserLogOut"/>
           <include name="AddLocationLeftSideBar"/>
           <include name="InValidUserLogin"/>
+          <include name="AddNotesCard"/>
           <include name="tearDown"/>
-          <include name="VerifyProductNamePageTitle"/>
           <include name="deleteLocation"/>
-          <include name="VerifySearchMetsMap"/>
           <include name="getTestResult"/>
           <include name="EditLocation"/>
-          <include name="CreateMarkerLocation"/>
+          <include name="CreateMarkerIncidents"/>
+          <include name="CreateMarkerNotes"/>
         </methods>
       </class> <!-- skyfallSmokeTest.SkyFallSmokeScript -->
     </classes>
