@@ -3,21 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="skyfallSmokeTest.SkyFallSmokeScript">
+      <class name="com.TestCasesScripts.LoginFunctionality">
         <methods>
-          <include name="AddIncidentsCard"/>
-          <include name="startReport"/>
-          <include name="AddLocationLeftSideBar"/>
-          <include name="InValidUserLogin"/>
-          <include name="AddNotesCard"/>
-          <include name="tearDown"/>
-          <include name="deleteLocation"/>
-          <include name="getTestResult"/>
-          <include name="EditLocation"/>
-          <include name="CreateMarkerIncidents"/>
-          <include name="CreateMarkerNotes"/>
+          <include name="start"/>
+          <include name="ValidUserLogin"/>
         </methods>
-      </class> <!-- skyfallSmokeTest.SkyFallSmokeScript -->
+      </class> <!-- com.TestCasesScripts.LoginFunctionality -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

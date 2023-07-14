@@ -40,7 +40,7 @@ import com.aventstack.extentreports.markuputils.ExtentColor;
 import com.aventstack.extentreports.markuputils.MarkupHelper;
 
 
-public class SkyFallSmokeScript {
+public class SkyFallRegressionScript {
 
 	public static WebDriver driver;
 
@@ -63,9 +63,9 @@ public class SkyFallSmokeScript {
 		reports.setSystemInfo("Browser", "Chrome V.113");
 
 		// configuration to change look and feel
-		htmlReporter.config().setDocumentTitle("Extent Report");
+		htmlReporter.config().setDocumentTitle("Regression Test Suit Report");
 		htmlReporter.config().setReportName("Skyfall Automation Smoke Test Summary Reports");
-		htmlReporter.config().setTheme(Theme.STANDARD);
+		htmlReporter.config().setTheme(Theme.DARK);
 		htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
 
@@ -234,12 +234,9 @@ public class SkyFallSmokeScript {
 		Thread.sleep(3000);
 		//driver.findElement(By.xpath("//a //span[text()='Add Location']")).click();
 		driver.findElement(By.xpath("(//a[@class='dropdown-item add-new-item'])[1]")).click();
-		Thread.sleep(3000);
-		driver.findElement(By.xpath("(//button[normalize-space()='New Location'])[1]")).click();
 
 		Thread.sleep(3000);
-		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Create Location1");
-		//driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Loc Name1");
+		driver.findElement(By.xpath("//input[@name='name']")).sendKeys("Loc Name1");
 		
 		//enter location description
 		Thread.sleep(3000);

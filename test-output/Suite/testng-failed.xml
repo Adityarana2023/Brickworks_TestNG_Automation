@@ -1,22 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="skyfallSmokeTest.ExtentListenerClass"/>
+  </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
       <class name="skyfallSmokeTest.SkyFallSmokeScript">
         <methods>
+          <include name="AddIncidentsCard"/>
           <include name="startReport"/>
-          <include name="tearDown"/>
+          <include name="AddLocationLeftSideBar"/>
           <include name="InValidUserLogin"/>
+          <include name="AddNotesCard"/>
+          <include name="tearDown"/>
           <include name="deleteLocation"/>
           <include name="getTestResult"/>
+          <include name="EditLocation"/>
+          <include name="CreateMarkerIncidents"/>
+          <include name="CreateMarkerNotes"/>
         </methods>
       </class> <!-- skyfallSmokeTest.SkyFallSmokeScript -->
+      <class name="skyfallSmokeTest.SkyFallRegressionScript">
+        <methods>
+          <include name="InValidUserLogin"/>
+          <include name="tearDown"/>
+          <include name="startReport"/>
+          <include name="AddIncidentsCard"/>
+          <include name="CreateMarkerNotes"/>
+          <include name="CreateMarkerIncidents"/>
+          <include name="CreateMarkerLocation"/>
+          <include name="EditLocation"/>
+          <include name="getTestResult"/>
+          <include name="deleteLocation"/>
+        </methods>
+      </class> <!-- skyfallSmokeTest.SkyFallRegressionScript -->
       <class name="com.project.skyfall.Brickworks_Website">
         <methods>
           <include name="start"/>
-          <include name="TS005_CreateMarkerLocation"/>
+          <include name="TS007_AddLocationLeftSideBar"/>
+          <include name="TS006_EditLocation"/>
           <include name="Aftermethod"/>
+          <include name="TS008_deleteLocation"/>
           <include name="TS001_VerifyProductNamePageTitle"/>
         </methods>
       </class> <!-- com.project.skyfall.Brickworks_Website -->
